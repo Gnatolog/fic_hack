@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+        <h1 class="title-content title-content-dashboard">Шаблоны договоров</h1>
+        <div class="directions">
+            <div class="direction awards-item item-award ">
+                <img class="img-description" src="{% static 'img/first_image.svg' %}" alt="картинка">
+                <div class="info-derection">
+                    <h2 class="title-discription">
+                        Договор о возмездном оказании услуг
+                    </h2>
+                    <p class="description-derection">
+                        Этот договор регулирует оказание Исполнителем информационно-консультационных услуг для
+                        Заказчика с целью получения статуса участника проекта по созданию и функционированию ИНТЦ МГУ «Воробьевы горы».
+                    </p>
+                    <p class="description-derection">
+                        Услуги включают помощь в научно-технической деятельности, с возможностью привлечения
+                        субисполнителей и подписания дополнительных соглашений при необходимости.
+                    </p>
+                    <a class="choice-templat" href="{% url 'change-action' %}">
+                        <p class="text-choice-template">
+                            Подробнее
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="direction awards-item item-award ">
+                <img class="img-description" src="{% static 'img/second_image.svg' %}" alt="картинка">
+                <div class="info-derection">
+                    <h2 class="title-discription">
+                        Договор оказания абонентских услуг
+                    </h2>
+                    <p class="description-derection">
+                        Приказ о начале разработки
+                        Приказ о разработке ПО регламентирует условия выполнения служебного задания: сроки,
+                        обязанности работника и работодателя, порядок уведомления и передачи результатов.
+                        Подробнее
+                    </p>
+                    <p class="description-derection">
+                        Документ фиксирует права на интеллектуальную собственность за компанией, устанавливает вознаграждение и назначает
+                        ответственных. Юридическая точность защищает интересы компании и упрощает управление проектом..есы.
+                    </p>
+                    <a class="choice-templat" href="{% url 'dogovor_ab' %}">
+                        <p class="text-choice-template">
+                            Подробнее
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="direction awards-item item-award ">
+                <img class="img-description" src="{% static 'img/three_image.svg' %}" alt="картинка">
+                <div class="info-derection">
+                    <h2 class="title-discription">
+                        Приказ о начале разработки
+                    </h2>
+                    <p class="description-derection">
+                        Этот договор предназначен для того, чтобы организовать сотрудничество между
+                        Заказчиком и Исполнителем (ООО
+                        «Акселератор Возможностей») в сфере информационно-консультационного
+                        сопровождения инновационной и научно-технической деятельности.
+                    </p>
+                    <p class="description-derection">
+                        Исполнитель будет оказывать услуги, связанные с поддержкой и развитием компаний
+                        в Инновационном научно-технологическом
+                        центре МГУ «Воробьевы горы». Договор предусматривает
+                        12 месяцев оказания услуг с отчетными периодами по три месяца.
+                    </p>
+                    <a class="choice-templat" href="#">
+                        <p class="text-choice-template">
+                            Подробнее
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="direction awards-item item-award ">
+                <img class="img-description" src="{% static 'img/four_image.svg' %}" alt="картинка">
+                <div class="info-derection">
+                    <h2 class="title-discription">
+                        Приказ и иные документы на создание РИД
+                    </h2>
+                    <p class="description-derection">
+                        Документ регламентирует процесс создания служебных результатов интеллектуальной деятельности,
+                        включая дизайн-макеты и элементы настольной игры.
+                    </p>
+                    <p class="description-derection">
+                        Он устанавливает права и обязанности сторон, сроки выполнения,
+                        порядок уведомления и передачу прав на результаты работодателю.
+                        Такой документ защищает интеллектуальную собственность компании и упрощает
+                        взаимодействие с сотрудниками.14:48
+
+                    </p>
+                    <a class="choice-templat" href="#">
+                        <p class="text-choice-template">
+                            Подробнее
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+{% endblock %}

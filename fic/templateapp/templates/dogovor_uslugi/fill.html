@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+
+<section class="content-body with-promt-body">
+    <h1 class="title-content title-content-midle">Договор возмездного оказания услуг</h1>
+    <p class="action_text">Или оставьте его пустым и нажмите кнопку посмотреть результат
+        <br>Для ручного ввода данных
+    </p>
+    <div class="change_action">
+        <form  method="post">
+            {% csrf_token %}
+            <div class="area_with-promt">
+                <textarea class="area-promt"  name="zakaz" id="user_query1" placeholder="Данные заказчика и договора пример ввода:
+
+                договор № ДУ2024 от 29.11.2024
+                сумма 1300000
+                аванс 50%
+
+                ООО VeniVidiVici
+                Гай Юльевич Цезарь
+                нотариально заверенная доверенность № 77 АД 7137899 от 4 ноября 2024
+                т. 222-333-55
+                imperator.gaius@rome.com
+                менеджер"></textarea>
+                <textarea class="area-promt" name="ispolnitel" id="user_query2"
+                          placeholder="Данные исполнителя и догвора пример ввода:
+
+                            +79885667272
+                            Заместитель генерального директора
+                            Ефимчик Борис Иванович
+                            boris.efimchik @ outlook.com"></textarea>
+            </div>
+        <div class="items-options">
+        <p><input class="edit_doc" type="submit" name="templatetypr" value="Отправить"></p>
+        </div>
+        </form>
+
+            <div class="description_template">
+                <p class="text-descriprion-template">
+                    Договоры оказания услуг – это соглашения между сторонами,
+                    в которых одна сторона (исполнитель) обязуется предоставить
+                    определенные услуги или действия, а другая сторона (заказчик)
+                    обязуется оплатить эти услуги. Этот вид договоров регулируется
+                    Гражданским кодексом РФ (ГК РФ), а также другими нормативными актами.
+                </p>
+                <p class="text-descriprion-template">
+                    В соответствии со статьей 779 ГК РФ, договор оказания услуг может
+                    быть как платным, так и безвозмездным (бесплатным). При его
+                    заключении стороны обязаны
+                    действовать добросовестно и соблюдать условия договора (статья 421 ГК РФ)..
+                </p>
+
+            </div>
+    </div>
+<!--                <a type="submit" name="templatetypr" class="edit_doc" href="">Далее</a>-->
+
+</section>
+{% endblock %}
+
+
+
+<a href="{% url 'provision-service-edit' %}">
+    <p>
+      Посмотреть результат
+    </p>
+</a>

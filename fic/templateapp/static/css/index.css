@@ -1,0 +1,636 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*стили меню навигации*/
+
+nav ul{
+	margin:0px 0px 0px 0px;
+	list-style-type: none;
+	text-align: center;
+}
+
+nav ul li {
+	font-size:150%;
+}
+
+nav ul li a:link, nav ul li a:visited{
+	color:rgb(9, 29, 113);
+	border-bottom:none;
+	font-weight: bold;
+	text-decoration: none;
+    font-family: Montserrat;
+}
+
+.navi-menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+
+}
+
+@media (max-width: 1399px) {
+    .link-page{
+        font-size: 14px;
+  
+    }
+}
+
+.link-page:hover{
+    color: rgb(187, 198, 255);
+}
+
+.popup{
+    display: none;
+}
+
+/* Cтили хедара */
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.contact-social{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.telephone_number{
+    /* Desktop/Sub1 */
+    color: rgb(9, 29, 113);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+/* Стили контент */
+
+.content-body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 60px;
+    gap: 90px;
+    padding: 60px 60px 90px 60px;
+}
+
+.title-content{
+    /* Desktop/H1 */
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-left: 80px;
+
+}
+
+.directions{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.direction{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    width: 560px;
+    height: 573px;
+    box-shadow: 2px 8px 40px 0px rgba(15, 14, 89, 0.1);
+    /* White */
+    background: rgb(255, 255, 255);
+}
+
+.img-description{
+    width: 560px;
+    height: 200px;
+    background: rgb(217, 217, 217);
+}
+.info-derection{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 31px;
+    margin: 40px;
+}
+.title-discription{
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 35.1px;
+}
+
+.description-derection{
+    width: 491px;
+    /* Desktop/Body1 */
+    color: rgb(72, 72, 72);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.choice-templat{
+    border-radius: 30px;
+    background: rgb(9, 29, 113);
+
+    width: 207px;
+    height: 44px;
+   
+}
+.text-choice-template{
+    margin: 14px 10px;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Стили Footer */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background: rgb(241, 239, 236);
+    padding: 60px;
+}
+
+.footer-info-module-1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.description-logo-footer{
+    /* Desktop/Body2 */
+    color: rgb(132, 142, 184);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.pay-method{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+.ur-info{
+    /* Desktop/Body1 */
+    color: rgb(132, 142, 184);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    width: 923px;
+}
+.ur-info2{
+    margin-top: 90px;
+    margin-bottom: 60px;
+}
+
+/*Документы*/
+.doc-conteiner{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 1000px;
+}
+
+#day{
+    width: 25px;
+}
+#mount{
+    width: 25px;
+}
+#year{
+    width: 35px;
+}
+
+.first_paragraph_date{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 585px;
+}
+
+#organz_zac{
+    width: 50px;
+}
+#day_notarial{
+    width: 25px;
+}
+#mount_notarial{
+    width: 25px;
+}
+#year_notarial{
+    width: 25px;
+}
+
+.points-agreement{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 25px;
+   
+}
+.descripthion-agreement{
+    text-align: justify;
+}
+.main-template{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#prepaid_expense{
+    width: 25px;
+}
+#sum_prepaid_expense{
+    width: 35px;
+}
+#sum_text_prepaid_expense{
+    width: 65px;
+}
+
+.subheadings{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 300px;
+}
+
+.left-subheadings-text{
+    margin-left: 91px;
+
+}
+
+table {
+    border-collapse: collapse; /* Убираем двойные границы между ячейками */
+    width: 100%; /* Устанавливаем ширину на 100% */
+}
+th, td {
+    border: 1px solid black; /* Тонкая черная граница */
+    padding: 8px; /* Отступы внутри ячеек */
+    text-align: left; /* Выравнивание текста в ячейках */
+}
+th {
+    background-color: #f2f2f2; /* Светлый фон для заголовков */
+}
+.step-table{
+    width: 40px;
+}
+.name-uslug{
+    width: 480px;
+}
+.date-uslug{
+    width: 65px;
+    
+}
+td{
+    text-align: center;
+}
+.side-executor{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+.side{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    gap: 162px;
+}
+.data-side{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 109px;
+}
+.line_signature{
+    height: 1px;
+    width: 80%;
+    background-color: black;
+    margin-bottom: 10px;
+}
+.side-executor-data{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    width: 300px;
+    text-align: justify;
+    margin-top: 50px;
+}
+.post{
+    margin-top: 10px;
+}
+.print{
+    margin-top: 10px;
+}
+
+.side-consumer-data{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* Midle page */
+
+.title-content-midle{
+    color:#091D71
+}
+
+.change_action{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.update_template{
+    /* Desktop/Body2 */
+    color: rgb(72, 72, 72);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.text-descriprion-template{
+    /* Desktop/Body1 */
+    color: rgb(72, 72, 72);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.description_features{
+    /* Desktop/Sub1. button2 */
+    color: rgb(72, 72, 72);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    border-radius: 10px;
+    padding: 27px 25px 27px 25px;
+    width: 750px;
+    background: rgba(9, 29, 113, 0.05);
+
+}
+
+.edit_doc{
+    border-radius: 30px;
+
+    /* Main/blue */
+    background: rgb(9, 29, 113);
+    padding: 16px 32px 16px 32px;
+    /* Desktop/Sub1. button2 */
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.save_button{
+    margin:35px;
+
+}
+
+.pdf{
+    box-sizing: border-box;
+    /* Main/light blue */
+    border: 2px solid rgb(187, 198, 255);
+    border-radius: 30px;
+
+    /* white */
+    background: rgb(255, 255, 255);
+    padding: 16px 32px 16px 32px;
+    margin: 0px 20px;
+    /* Desktop/Sub1. button2 */
+    color: rgb(36, 36, 36);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.items-options{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.description_template{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 750px;
+    margin: 60px;
+    gap: 16px;
+}
+
+.action_text{
+    /* Desktop/h2 */
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 750px;
+}
+
+.with-promt-body{
+    align-items: center;
+}
+
+.area-promt{
+    border-radius: 10px;
+    background: rgba(9, 29, 113, 0.05);
+    width:  752px;
+    height: 200px;
+    outline: none;
+    box-shadow: none; /* Убираем тени */
+    border:0;
+    padding-left: 60px;
+    padding-top: 10px;
+}
+
+.area_with-promt{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    margin-bottom: 60px;
+}
+
+.link-page{
+    color: rgb(9, 29, 113);
+
+}
+
+
+.title-content-dashboard{
+
+    margin-left:175px;
+}
+
+
+/*Стили Награды*/
+
+.effect-award:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0,0.8),
+    0 0 80px rgba(0, 0, 0, 0.6),
+    0 0 20px rgba(0, 0, 0, 0.4);
+}
+.active-award{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8),
+    0 0 80px rgba(0, 0, 0, 0.6),
+    0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.item-award {
+    position: relative;
+    /* позволяет использовать ширину контента */
+}
+
+.item-award::after {
+    content: ""; /* создаем пустой элемент */
+    position: absolute; /* абсолютное позиционирование */
+    top: 200px; /* занимаем весь контейнер */
+    left: 0;
+    right: 0;
+    bottom: 90px;
+    background-color: rgba(104, 153, 230, 0.307); /* полупрозрачный черный фон */
+    opacity: 0; /* фон изначально невиден */
+    transition: opacity 0.3s ease;
+}
+
+.active_awards_item::after{
+    opacity: 1;
+
+}
+
+.item-award:hover::after {
+    opacity: 1; /* включаем затемнение при наведении */
+}
+

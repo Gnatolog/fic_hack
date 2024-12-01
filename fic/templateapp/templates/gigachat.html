@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Вставка данных</title>
+</head>
+<body>
+    <form method="post">
+    {% csrf_token %}
+        <p><b>Введите ваши данные:</b></p>
+        <label for="user_query1">Данные заказчика и договора:</label>
+        <p><textarea rows="10" cols="45" name="zakaz" id="user_query1" label="dddd"></textarea></p>
+        <label for="user_query2">Данные исполнителя и догвора:</label>
+        <p><textarea rows="10" cols="45" name="ispolnitel" id="user_query2"></textarea></p>
+        <p><input type="submit" value="Отправить"></p>
+
+</form>
+</body>
+</html>
